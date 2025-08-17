@@ -9,8 +9,8 @@ This is a Streamlit-based web application that allows users to upload multiple P
 <img width="1440" height="900" alt="Screenshot 2025-08-17 at 3 29 21 PM" src="https://github.com/user-attachments/assets/5b81cf22-4f93-4944-b255-96a2668d26b5" />
 <img width="1440" height="900" alt="Screenshot 2025-08-17 at 3 30 35 PM" src="https://github.com/user-attachments/assets/8a26d938-22a3-429d-afda-1141bf7c800b" />
 
-### Demo
-[![Project Demo Video](https://img.youtube.com/vi/fXSFjh3ne3I.jpg)](https://www.youtube.com/watch?v=fXSFjh3ne3I)
+### Lets Watch the Demo Video 📺..
+[![Project Demo Video](https://img.youtube.com/vi/fXSFjh3ne3I/0.jpg)](https://www.youtube.com/watch?v=fXSFjh3ne3I)
 
 # 👷🏻‍♂️Project Development Lifecycle.
 
@@ -47,3 +47,78 @@ An intuitive and user-friendly front-end was developed using Streamlit. The UI p
 Uploading multiple PDF documents.
 Initiating the processing and indexing pipeline with a single click.
 Engaging in a real-time, interactive Q&A session with their documents.
+
+
+## **Features**
+
+**High-Speed Responses:** Leverages the Groq API and Llama 3 for near-instant, real-time answers.
+
+**Multiple Document Support:** Users can upload and query several PDF documents at once.
+
+**Private & Secure:** Text extraction and embedding generation are performed locally using Hugging Face Sentence Transformers, ensuring your document content remains private.
+
+**Efficient Vector Search:** Utilizes a local FAISS vector store for rapid and efficient retrieval of relevant information.
+
+**Handles Large Documents:** Built with a map_reduce chain in LangChain to effectively process large texts without exceeding API limits.
+
+**Conversational Interface:** Engage in a chat-like conversation to query information from the uploaded documents.
+
+## **Installation.**
+
+First, you need to install all the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## **Usage.**
+
+1. Running the Application
+
+To start the application, run the following command in your terminal:
+
+```bash
+streamlit run chat_with_groq.py
+```
+This will launch the application locally. You can access it in your web browser at http://localhost:8501.
+
+2. Upload PDF Documents
+
+Use the file uploader in the sidebar to upload one or more PDF documents.
+
+3. Process Documents
+
+After uploading your PDFs, click the "Submit & Process" button. This will extract the text, generate local embeddings, and create the vector store.
+
+4. Query Information
+
+Once processing is complete, you can enter your questions in the text input box provided. Press Enter to receive a response generated from the content of your documents.
+
+## **Configuration.**
+
+Before running the application, you must ensure you have set up the required environment(.env) variable:
+
+```bash
+GROQ_API_KEY: Your API key for the Groq API.
+```
+This should be stored in a .env file in the root directory of the project.
+
+## **Core Dependencies.**
+
+**streamlit:** For building the interactive web interface.
+
+**groq & langchain-groq:** Provides access to the Groq API for high-speed LLM inference.
+
+**langchain:** For orchestrating the Q&A pipeline, including text chunking and conversational chains.
+
+**PyPDF2:** For extracting text from PDF files.
+
+**python-dotenv:** For loading environment variables from a .env file.
+
+**faiss-cpu:** For efficient, local similarity search in the vector store.
+
+**sentence-transformers:** For generating high-quality text embeddings locally.
+
+## **Contributing.**
+
+Contributions are welcome! Please feel free to fork this repository and submit pull requests to propose changes or improvements🤝.
