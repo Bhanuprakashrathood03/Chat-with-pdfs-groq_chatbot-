@@ -9,6 +9,9 @@ This is a Streamlit-based web application that allows users to upload multiple P
 <img width="1440" height="900" alt="Screenshot 2025-08-17 at 3 29 21 PM" src="https://github.com/user-attachments/assets/5b81cf22-4f93-4944-b255-96a2668d26b5" />
 <img width="1440" height="900" alt="Screenshot 2025-08-17 at 3 30 35 PM" src="https://github.com/user-attachments/assets/8a26d938-22a3-429d-afda-1141bf7c800b" />
 
+### Demo
+[![Project Demo Video](https://img.youtube.com/vi/fXSFjh3ne3I.jpg)](https://www.youtube.com/watch?v=fXSFjh3ne3I)
+
 # 👷🏻‍♂️Project Development Lifecycle.
 
 ## **High-Speed PDF Chatbot.**
